@@ -162,7 +162,7 @@ def event_handle(event):
              headers = request.headers
              json_headers = ({k:v for k, v in headers.items()})
              json_headers.update({'Host':'dialogflow.cloud.google.com'})
-             url = "https://dialogflow.cloud.google.com/v1/integrations/line/fd7c0031-8d89-4cf7-be83-f0a6d580f411webhook/"
+             url = "https://dialogflow.cloud.google.com/v1/integrations/line/fd7c0031-8d89-4cf7-be83-f0a6d580f411/webhook"
     elif msgType == "image":
         try:
             message_content = line_bot_api.get_message_content(event['message']['id'])
